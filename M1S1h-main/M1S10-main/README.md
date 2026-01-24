@@ -147,19 +147,19 @@ Garantindo **qualidade e consistência dos dados**.
 ## 🚀 Melhorias Futuras
 
 - Inclusão de dimensão de tempo
-- Dashboards interativos (Power BI / Streamlit)
+- Dashboards 
+- executar o graficos.ipynb junto com o main.py
 - Alertas automáticos de estoque crítico
 - Análise de estoque parado
 - Previsão de demanda com Machine Learning
 
 ---
 
-## 👨‍💻 Autor
+
 **Konrad Musialowski**  
 Estudante de Sistemas de Informação  
-Projeto desenvolvido para fins acadêmicos e portfólio profissional.
+Projeto desenvolvido para fins acadêmicos
 
 ---
 
-📌 *Este projeto demonstra boas práticas em ETL, modelagem dimensional e análise de dados aplicadas à logística.*
 
