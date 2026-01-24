@@ -105,20 +105,23 @@ def transform_movimentacao(df: pd.DataFrame) -> pd.DataFrame:
         how='outer'
     ).fillna(0)
 
-    # Saldo consolidado
+        # Saldo consolidado
     df_confronto['saldo_consolidado'] = (
         df_confronto['total_entrada'] - df_confronto['total_saida']
     )
+    df_confronto['saldo_consolidado'] = df_confronto['saldo_consolidado'].fillna(0)
 
     print("\nResumo ENTRADA x SAÍDA:")
     print(df_confronto.head())
+    print(df.info)
 
     # =========================
     # SALDO FINAL ACUMULADO
     # =========================
-    df['saldo_final'] = df.sort_values('data_movimentacao').groupby(
-        ['cd_id', 'codigo_produto']
-    )['quantidade_liquida'].cumsum()
+    df['saldo_final'] = df_confronto.sort_values('data_movimentacao').groupby(
+        ['cd_id', 'data_movimentacao', 'codigo_produto']
+    )['saldo_consolidado'].cumsum()
+
+    df['saldo_final'] = df['saldo_final'].fillna(0)
 
     return df
-
