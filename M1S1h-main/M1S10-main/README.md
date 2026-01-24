@@ -120,7 +120,7 @@ python main.py
 jupyter notebook
 ```
 Abra o arquivo `notebooks/graficos.ipynb`.
-
+rode direto da pasta no botao executar cell
 ---
 
 ## 📊 Exemplos de Análises Geradas
