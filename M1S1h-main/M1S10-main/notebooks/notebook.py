@@ -3,10 +3,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-plt.style.use("ggplot")
+from pathlib import Path
 
-df = pd.read_csv("consulta.csv", sep=";")
-df2=pd.read_csv("consulta2.csv", sep=";")
+
+BASE_DIR = Path().resolve().parent
+
+df = pd.read_csv(BASE_DIR / "data" / "output" / "consulta.csv", sep=";")
+df2 = pd.read_csv(BASE_DIR / "data" / "output" / "consulta2.csv", sep=";")
+
+
+plt.style.use("ggplot")
 # Visualizar as primeiras linhas
 print("\n📊 Estatísticas - Ano")
 display(df['ano'].describe())
@@ -108,3 +114,5 @@ plt.xlabel("Mês")
 plt.ylabel("Total de Entrada")
 plt.tight_layout()
 plt.show()
+
+
