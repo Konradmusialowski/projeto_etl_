@@ -1,7 +1,7 @@
 from src.database import connect_db
 from src.etl.pipeline import run_pipeline
 from src.utils import executar_sql_arquivo, exportar_query_sql_arquivo
-from src.etl.run_notebook import executar_notebook
+
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -28,7 +28,7 @@ def main():
     exportar_query_sql_arquivo(conn, BASE_DIR / "sql" / "consulta.sql","consulta" )
     exportar_query_sql_arquivo(conn, BASE_DIR / "sql" / "consulta2.sql","consulta2" )
     exportar_query_sql_arquivo(conn, BASE_DIR / "sql" / "consulta_produto.sql","consulta_produto" )
-    
+
 
     conn.close()
     print("✅ Pipeline executado com sucesso")

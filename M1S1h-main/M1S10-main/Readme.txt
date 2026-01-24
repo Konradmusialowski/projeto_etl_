@@ -102,7 +102,8 @@ carregar os datasets
 
 processar as análises
 
-exibir estatísticas e gráficos
+para  estatísticas e gráficos
+executar o comando direto no arquivo para gerar os graficos
 
 dentro da pasta Dados um arquivo Clean confirma que nao havia dados antes de processar os dados e 
 um arquivo dados.cvs mostra quantos dados foram carregados para garantir que tudo ocorreu como deveria
@@ -135,22 +136,10 @@ Identificação de possíveis gargalos logísticos
 
 🔹 Análise temporal (evolução das saídas ao longo do tempo)
 
-👨‍💻 Autor
-
-Projeto desenvolvido por Konrad Musialowski
+ Konrad Musialowski
 Curso: Desenvolvimento de Sistemas
 Área: Análise de Dados / Logística / Estoque
 
-📌 Considerações Finais
 
 Este projeto demonstra a aplicação prática de análise de dados em cenários logísticos, utilizando ferramentas amplamente empregadas no mercado e seguindo boas práticas de organização, validação e documentação.
 
-Se quiser, eu posso:
-
-🔧 ajustar o texto para ficar mais acadêmico ou mais corporativo
-
-📸 sugerir imagens/diagramas para incluir no README
-
-📄 adaptar o README para nota máxima em rubrica
-
-É só falar 😄
